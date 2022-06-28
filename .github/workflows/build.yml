@@ -6,7 +6,7 @@ on:
       - 'master'
       - 'keycloak-*'
     tags:
-      - 'v*.*.*-*.*.*'
+      - 'v*.*.*'
 
 jobs:
   build:
