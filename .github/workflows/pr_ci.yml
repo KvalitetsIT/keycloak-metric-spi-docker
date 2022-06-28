@@ -1,0 +1,16 @@
+name: Pull Request CI
+
+on:
+  pull_request: ~
+
+jobs:
+  pr_build:
+    runs-on: ubuntu-latest
+
+    steps:
+# Checkout source code
+    - uses: actions/checkout@v3
+
+
+    - name: Build and test
+      run: ./build/build.sh
